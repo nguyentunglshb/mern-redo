@@ -1,0 +1,55 @@
+
+// REGISTER
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "henry_any",
+    "password": "henry"
+}
+
+###
+// LOGIN
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "username" : "henry",
+    "password": "henry"
+}
+
+###
+// CREATE NEW POST
+POST http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MWE2NGM0MTRiNjY4MDkyNDUzNjk3NWYiLCJpYXQiOjE2Mzk3NTg2NTJ9.ySHKpNZSxTy_vVYI1c3xynUFls8-sO3oOel4EgbQgak
+
+{
+  "title": "TypeScript6",
+  "description": "TypeScript4",
+  "url": "typescript.com",
+  "status": "LEARNED"
+}
+
+###
+
+GET http://localhost:5000/api/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MWE2Y2YzN2E2YWQ2ZDRjZjJhZTA1NmQiLCJpYXQiOjE2Mzg0NTY1NDh9.hiCniNOoItRpOmT8v18YquNRNByP6WmvnqmY8K2A2Kw
+
+###
+
+PUT http://localhost:5000/api/posts/61a6cfe0a6ad6d4cf2ae056f
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MWE2Y2YzN2E2YWQ2ZDRjZjJhZTA1NmQiLCJpYXQiOjE2MzgzMzA5NTN9.tTr7YjV4WMDSHFAB289yOn2jfcJynjSVYyyYm6eHLcY
+
+{
+  "title": "Vue2",
+  "description": "Vueeee",
+  "url": "vuejs.org",
+  "status": "LEARNING"
+}
+
+###
+
+DELETE http://localhost:5000/api/posts/61a8dd22c2d522062153b6f1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MWE2Y2YzN2E2YWQ2ZDRjZjJhZTA1NmQiLCJpYXQiOjE2Mzg0NTY1NDh9.hiCniNOoItRpOmT8v18YquNRNByP6WmvnqmY8K2A2Kw
