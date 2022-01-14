@@ -1,0 +1,63 @@
+.page-third {
+  width: 100%;
+
+  .third-blank {
+    width: 100%;
+    background-color: white;
+    height: 100px;
+  }
+
+  .third-big-title {
+    padding-top: 16px;
+    text-align: center;
+    height: 54px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 54px;
+  }
+
+  .third-small-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 26px;
+    /* identical to box height, or 108% */
+
+    text-align: center;
+  }
+
+  .third-container {
+    height: 742px;
+    background-color: #fc0;
+
+    .third-join {
+      color: white;
+      text-align: center;
+      font-weight: 900;
+      font-size: 70px;
+      line-height: 100px;
+      height: 300px;
+      padding-top: 200px;
+    }
+
+    .third-join-test {
+      border-radius: 40px;
+      border: none;
+      width: 400px;
+      height: 70px;
+      font-size: 38px;
+      font-weight: 400;
+      color: #999;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+
+      svg {
+        width: 50px;
+        height: 50px;
+        color: #999;
+      }
+    }
+  }
+}

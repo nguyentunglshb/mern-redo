@@ -1,0 +1,91 @@
+.page-second {
+  width: 100%;
+  height: auto;
+  background-color: white;
+
+  .page-second-container {
+    max-width: 80%;
+    margin: 0 auto;
+    height: auto;
+
+    .second-title {
+      font-style: normal;
+      width: 100%;
+      height: auto;
+      font-weight: 800;
+      font-size: 36px;
+      line-height: 44px;
+      padding-top: 49px;
+      text-align: center;
+      color: #2f281e;
+    }
+
+    .second-place-container {
+      width: 100%;
+      height: 250px;
+      display: flex;
+      //   background-color: black;
+      justify-content: space-between;
+
+      .second-place-item {
+        height: 150px;
+        width: 180px;
+        // background-color: blue;
+
+        .second-icon-title {
+          text-align: center;
+          font-weight: 600;
+          font-size: 22px;
+          line-height: 33px;
+          height: 33px;
+        }
+
+        p.second-item-description {
+          height: 150px;
+          width: 100%;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 26px;
+        }
+
+        .second-icon {
+          width: 50px;
+          height: 50px;
+          margin: 0 auto;
+          border-radius: 16px;
+        }
+
+        .second-icon-1 {
+          background-color: #3a5aff;
+        }
+
+        .second-icon-2 {
+          background-color: #ffc43b;
+        }
+
+        .second-icon-3 {
+          background-color: #3ec4ff;
+        }
+
+        .second-icon-4 {
+          background-color: #ff3b53;
+        }
+      }
+
+      // .second-school {
+      //   // background-color: black;
+      // }
+    }
+
+    .second-now {
+      width: 140px;
+      height: 56px;
+      border: none;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 15px;
+    }
+  }
+}
